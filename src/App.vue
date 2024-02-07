@@ -10,22 +10,10 @@ import { ref } from "vue" // you need this to use ref()
 <!-- the template is where the html code goes -->
 <template>
     
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David's website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    
-</head>
-<body>
-   
     <div id="navbar" class="container">  
-        <div id="title">David's bootcamp website website</div>
+        <div id="title">Bruno's bootcamp website website</div>
         <div id="logo">
-            <img src="cow.jpg" alt="macad cow">
+            <img src="./cow.jpg" alt="macad cow">
 
         </div>
         
@@ -38,13 +26,6 @@ import { ref } from "vue" // you need this to use ref()
 
         <div id="main" class="container"> Text input </div>
     </div>
-
-
-</body>
-</html>
-
-
-
 </template>
 
 
@@ -53,8 +34,8 @@ import { ref } from "vue" // you need this to use ref()
 <style scoped>
 html{
     
-    background-color: rgb(59, 59, 59); 
-    color: white;
+    background-color:black 
+    
 }
 
 body{
