@@ -2,6 +2,16 @@
 <script setup>
 import { ref } from "vue" // you need this to use ref()
 
+var count = ref(41);
+
+let name = ref ("Bruno")
+
+function increment () {
+count.value++;
+console.log(name)
+
+
+}
 
 </script>
 
@@ -11,20 +21,16 @@ import { ref } from "vue" // you need this to use ref()
 <template>
     
     <div id="navbar" class="container">  
-        <div id="title">Bruno's bootcamp website website</div>
-        <div id="logo">
-            <img src="./cow.jpg" alt="macad cow">
-
-        </div>
-        
-
+        <div id="title">{{ name }} 's website</div>
+        <button @click="increment">Click for the meaning of the universe</button>
+        <p style = "margin-left: ;: 8px"> Answer is: {{ count }}</p>;"
     </div>
+
 
     <div id="flex">
 
-        <div id="sidebar" class="container"> Sidebar </div>
-
-        <div id="main" class="container"> Text input </div>
+        <div id="sidebar" class="container">  </div>
+        <div id="main" class="container"> Just works once  </div>
     </div>
 </template>
 
@@ -34,7 +40,7 @@ import { ref } from "vue" // you need this to use ref()
 <style scoped>
 html{
     
-    background-color:black 
+    background-color:black
     
 }
 
